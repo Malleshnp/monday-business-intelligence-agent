@@ -1,0 +1,23 @@
+# Core API
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Configuration & Validation
+pydantic==2.5.3
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# HTTP Client (Monday API)
+httpx==0.26.0
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.3
+python-dateutil==2.8.2
+
+# LLM / Query Understanding
+openai==1.10.0
+
+# Testing (Optional but Professional)
+pytest==7.4.4
+pytest-asyncio==0.23.3
