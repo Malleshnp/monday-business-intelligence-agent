@@ -337,13 +337,3 @@ pytest
 ## License
 
 MIT License - see LICENSE file for details
-
-## Support
-
-For issues and questions:
-- Open a GitHub issue
-- Contact: support@example.com
-
----
-
-Built with ❤️ for founders who need quick, accurate business insights.
