@@ -229,30 +229,31 @@ Every response includes a confidence score and data quality warnings.
 
 ### Project Structure
 
-```
-monday-bi-agent/
-├── backend/
-│   ├── app/
-│   │   ├── core/
-│   │   │   └── config.py          # Configuration settings
-│   │   ├── services/
-│   │   │   ├── monday_client.py   # GraphQL API client
-│   │   │   ├── data_resilience.py # Data normalization & validation
-│   │   │   ├── query_engine.py    # Query parsing
-│   │   │   ├── bi_analyzer.py     # Metric calculations
-│   │   │   └── bi_agent.py        # Main orchestrator
-│   │   └── main.py                # FastAPI application
-│   └── requirements.txt
+skylark-monday-bi-agent/
+│
 ├── app/
-│   ├── src/
-│   │   ├── App.tsx               # Main React application
-│   │   ├── main.tsx              # Entry point
-│   │   └── index.css             # Styles
-│   ├── package.json
-│   └── vite.config.ts
-├── DECISION_LOG.md               # Architecture decisions
-└── README.md                     # This file
-```
+│   ├── main.py
+│   ├── core/
+│   │   └── config.py
+│   ├── services/
+│   │   ├── bi_agent.py
+│   │   ├── monday_client.py
+│   │   ├── data_resilience.py
+│   │   ├── query_engine.py
+│   │   └── bi_analyzer.py
+│   └── __init__.py
+│
+├── static/                 # Built frontend (Vite dist)
+│   ├── index.html
+│   └── assets/
+│       ├── index-xxxx.js
+│       └── index-xxxx.css
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── LICENSE (optional)
+
 
 ### Running Tests
 
