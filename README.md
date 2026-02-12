@@ -245,7 +245,7 @@ Every response includes a confidence score and data quality warnings.
 ## Development
 
 ### Project Structure
-
+```
 skylark-monday-bi-agent/
 │
 ├── app/
@@ -270,7 +270,7 @@ skylark-monday-bi-agent/
 ├── README.md
 ├── .gitignore
 └── LICENSE (optional)
-
+```
 
 ### Running Tests
 
