@@ -15,12 +15,29 @@ An AI-powered Business Intelligence agent that answers founder-level queries by 
 
 ## Architecture
 
-```
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│   React Frontend │────▶│  FastAPI Backend │────▶│  Monday.com    │
-│   (TypeScript)   │     │  (Python)        │     │  GraphQL API   │
-└─────────────────┘     └─────────────────┘     └─────────────────┘
-```
+                ┌─────────────────────────┐
+                │        Frontend         │
+                │  (React + Vite build)   │
+                └────────────┬────────────┘
+                             │
+                             ▼
+                ┌─────────────────────────┐
+                │        FastAPI API      │
+                │      app.main:app       │
+                └────────────┬────────────┘
+                             │
+         ┌───────────────────┼───────────────────┐
+         ▼                   ▼                   ▼
+  Query Engine         Monday Client       Data Resilience
+ (Intent Parsing)     (Board + Items API)   (Normalization)
+         │                   │                   │
+         ▼                   ▼                   ▼
+                 Business Intelligence Analyzers
+           (Pipeline | Revenue | Execution | Leadership)
+                             │
+                             ▼
+                     Structured BI Response
+
 
 ### Backend Components
 
