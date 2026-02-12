@@ -2,7 +2,7 @@
 
 An AI-powered Business Intelligence agent that answers founder-level queries by integrating with Monday.com boards. Get instant insights on your sales pipeline, revenue forecast, and project execution.
 
-![BI Agent Screenshot](screenshot.png)
+
 
 ## Features
 
