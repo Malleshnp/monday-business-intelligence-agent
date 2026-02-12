@@ -12,7 +12,7 @@ An AI-powered Business Intelligence agent that answers founder-level queries by 
 - **Business Intelligence**: Computes pipeline metrics, revenue forecasts, and execution status
 - **Leadership Updates**: Generates board-ready executive summaries with risks and opportunities
 - **Data Quality Transparency**: Reports confidence scores and data quality issues
-
+```
 ## Architecture
 
                 ┌─────────────────────────┐
@@ -37,7 +37,7 @@ An AI-powered Business Intelligence agent that answers founder-level queries by 
                              │
                              ▼
                      Structured BI Response
-
+```
 
 ### Backend Components
 
